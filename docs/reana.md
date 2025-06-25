@@ -92,4 +92,5 @@ $ reana-client upload
 $ reana-client start      
 $ reana-client status
 ```
-5. Check the state of your workflow on https://reana-vre.cern.ch/. 
+
+Check the state of your workflow on https://reana-vre.cern.ch/. 

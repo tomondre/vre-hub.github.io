@@ -254,14 +254,14 @@ rucio list-scopes
 ```
 The current ones are: 
 
-|  SCOPE (_Experiment_Institute_Project_) | Description |
-| ----------- | ----------- |
-| **test**     | for the admins of the cluster       |
-| **ET_OSB_MDC1**  |  _Einstein Telescope_Observational Science Board_Mock Data Challenge 1_    |
-| **CMS_CERN_AGC**  |  _Analysis Grand Challenge on CMS data _    |
-| **ATLAS_LAPP_SP**  |  _ATLAS_Laboratoire d'Annecy de Physique des Particules_ScienceProject_    | 
-| **KM3NET_ECAP_SP**  |  _Cubic Kilometre Neutrino Telescope_Erlangen Centre for Astroparticle Physics_ScienceProject_ |
-| **EGO_INFN_GW**  |  _European Gravitational Observatory_Istituto Nazionale Fisica Nucleare_Gravitational Waves_ |
+| SCOPE (_Experiment_Institute_Project_) | Description                                                                                   |
+|----------------------------------------|-----------------------------------------------------------------------------------------------|
+| **test**                               | for the admins of the cluster                                                                 |
+| **ET_OSB_MDC1**                        | _Einstein Telescope_Observational Science Board_Mock Data Challenge 1_                        |
+| **CMS_CERN_AGC**                       | _Analysis Grand Challenge on CMS data _                                                       |
+| **ATLAS_LAPP_SP**                      | _ATLAS_Laboratoire d'Annecy de Physique des Particules_ScienceProject_                        | 
+| **KM3NET_ECAP_SP**                     | _Cubic Kilometre Neutrino Telescope_Erlangen Centre for Astroparticle Physics_ScienceProject_ |
+| **EGO_INFN_GW**                        | _European Gravitational Observatory_Istituto Nazionale Fisica Nucleare_Gravitational Waves_   |
 
 To add a scope, you need to have administrator rights. If you don't have them, ask the system administrators to create a scope for you. 
 
