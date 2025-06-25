@@ -13,7 +13,7 @@ Once your account is approved, and you have confirmed your email address, you wi
 
 :::note
 
-All the underlaying VRE services and resources are connected through the ESCAPE IAM service. 
+All the underlying VRE services and resources are connected through the ESCAPE IAM service. 
 Once you have an account, you will be able to interact seamlessly with any of them.
 
 :::
@@ -24,9 +24,9 @@ The ESCAPE INDIGO IAM support OpenID tokens.
 
 :::info
 
-Most of the token interactions between the different component of the VRE are and should stay hidden to standard users of the platorm. 
+Most of the token interactions between the different component of the VRE are and should stay hidden to standard users of the platform. 
 
-Fur further details about these exchange, visit the [IAM documentation](https://indigo-iam.github.io/v/v1.10.0/docs/reference/configuration/external-authentication/oidc/) or navigate through the different sections of the [VRE Tecnical Documentation](./tech-docs/home.md).
+Fur further details about these exchange, visit the [IAM documentation](https://indigo-iam.github.io/v/v1.10.0/docs/reference/configuration/external-authentication/oidc/) or navigate through the different sections of the [VRE Technical Documentation](./tech-docs/home.md).
 
 :::
 
@@ -54,7 +54,7 @@ Before linking the Grid certificate to your IAM account, you will need to add th
 Be aware that the browser is configured to store all your uploaded certificates. You should therefore check whether the browser is not already using an old certificate, which might be expired. If this is the case, delete old certificates and upload your new one. 
 
  - **Chrome**: Navigate to `chrome://settings/security` and following the instructions presented upon selecting `Advanced > Manage Certificates > Import`. 
- - **Firefox**: Navigate to `Settings`, search for `Certificates` and clicl on the `View Certificates...` button. Import the X.509 certificate under the `Your Certificates` tab by finding its location on your local computer.
+ - **Firefox**: Navigate to `Settings`, search for `Certificates` and click on the `View Certificates...` button. Import the X.509 certificate under the `Your Certificates` tab by finding its location on your local computer.
 
 Once the certificate has been imported, restart your browser and log into the [ESCAPE IAM](https://iam-escape.cloud.cnaf.infn.it/login). A pop-up window allowing you to select the certificate you want to identify with should appear. If the pop-up window has appeared, go to your IAM user home page and click on the green `Link certificate` button in the `X.509 certificates` panel. 
 

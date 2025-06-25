@@ -49,7 +49,7 @@ This component is used as a regular tooltip in the Job Logs section within the w
 This component is used to display the connection form in the _Connection_ tab. It has two text fields for the server URL and the access token, and a _Connect_ button to test the connection.
 
 ### `@Create/CreateForm.tsx` {#create-form}
-This component is used to display the create form in the _Create_ tab. It has a text field for the workflow name, a file browser to select the workflow specification file, and two buttons: a _Valitate_ button to validate the YAML file and a _Create & Run_ button to create the workflow, upload the files and run it.
+This component is used to display the create form in the _Create_ tab. It has a text field for the workflow name, a file browser to select the workflow specification file, and two buttons: a _Validate_ button to validate the YAML file and a _Create & Run_ button to create the workflow, upload the files and run it.
 
 ### `@Workflows/WorkflowDetails.tsx` {#workflow-details}
 This component is used to display the details of a workflow. It contains a menu bar with several tabs:  _Job Logs_, _Engine Logs_, _Workspace_, and _Specification_.
@@ -61,7 +61,7 @@ This component is used to display the engine logs of a workflow.
 This component is used to display the job logs of a workflow. It has a dropdown to select the workflow step. The details of the selected step are displayed in tooltips.
 
 ### `@Workflows/WorkflowOverview.tsx` {#workflow-overview}
-This component is used to display the general information about the workflow. It appears in every tab of the workflow details. It containse the workflow name, the run number, the status, a date related to the status, and the number of steps. When the workflow is not in a final state, it also displays a refresh button.
+This component is used to display the general information about the workflow. It appears in every tab of the workflow details. It contains the workflow name, the run number, the status, a date related to the status, and the number of steps. When the workflow is not in a final state, it also displays a refresh button.
 
 ### `@Workflows/WorkflowSpecification.tsx` {#workflow-specification}
 This component is used to display the specification of the workflow. It shows the content of the YAML file that defines the workflow.

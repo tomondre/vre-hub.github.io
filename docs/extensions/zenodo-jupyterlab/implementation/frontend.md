@@ -11,7 +11,7 @@ This file creates the entire frontend extension as a widget and adds it to the r
 ### `class ZenodoWidget` 
 Extends `@lumino/widgets/Widget`. 
 
-This houses the entire extension. Given the nature of `@lumino/widgets/Widget`, this component is defined without `React`, though the `SideBarPanel` which is a sub-component that contains the all of the content of the widget is developed with `React` as are all futher sub-components.
+This houses the entire extension. Given the nature of `@lumino/widgets/Widget`, this component is defined without `React`, though the `SideBarPanel` which is a sub-component that contains the all of the content of the widget is developed with `React` as are all further sub-components.
 
 #### `constructor(app: @jupyterlab/application/JupyterFrontEnd)`
 Extends the super type's constructor, as well as defines the app associated with the widget as the passed app (notably, the one that is active). Three properties are also defined and initialized that describe which section (Login, Search, or Upload) are showing when the extension is initially loaded. Basic widget styling is added as well from the `/style/base.css` file, and an icon is added to the sidebar, imported as an svg string and interpreted as a `@jupyterlab/ui-components/LabIcon` object.
@@ -146,7 +146,7 @@ Note: `FileEntry` is a specialized dictionary defined in `components/type.tsx`.\
 If the selected entry was a directory, this function sets `currentPath` to the path of that entry.
 
 ##### `handleBreadcrumbClick(path: string)`
-When a breadcrumb (shortbut path links displayed when in nested directories) is clicked, simply sets `currentPath` to that breadcrumb's path.
+When a breadcrumb (shortcut path links displayed when in nested directories) is clicked, simply sets `currentPath` to that breadcrumb's path.
 
 ##### `breadcrumbs = useMemo()`
 Executes on changes to `currentPath` or `rootPath`. Normalized the syntax of the paths, then iterate through each section of `currentPath` after `rootPath`. During this iteration, builds a list of `React.Fragments` which house the breadcrumbs for each nested directory, complete with click logic (`handleBreadcrumbClick`).

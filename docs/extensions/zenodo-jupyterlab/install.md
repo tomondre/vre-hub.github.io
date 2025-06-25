@@ -20,7 +20,7 @@ npm install -g corepack
 corepack enable
 ```
 
-Install Python dependecies:
+Install Python dependencies:
 ```bash=
 python3 -m pip install -r requirements.txt
 ````

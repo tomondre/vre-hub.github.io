@@ -3,7 +3,7 @@
 Connect to the cluster by navigating [here](https://reana-vre.cern.ch/). You can use your X509 certificate to authenticate through IAM. 
 Explore Reana on the software's [official documentation](https://docs.reana.io/). 
 
-You can find other examples of differen workflow languages on the [official Reana documentation](https://docs.reana.io/advanced-usage/access-control/rucio/).
+You can find other examples of different workflow languages on the [official Reana documentation](https://docs.reana.io/advanced-usage/access-control/rucio/).
 
 # Reana - Rucio integration
 

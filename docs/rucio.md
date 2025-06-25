@@ -10,16 +10,16 @@ An overview of the available Rucio Storage Elements (RSEs) can be found in the [
 If you do not have access to the dashboard, login with a CERN account, or please get in touch through the **[Mattermost channel](https://mattermost.web.cern.ch/signup_user_complete/?id=zqaa9p5fqfd9bnnc64at4b5aye&md=link&sbr=su)**.
 The location of the storage elements, which are provided and maintained by European partner institutions, is shown on the map, and a list of them is reported in the table. 
 
-| _Rucio Storage Element (site-technology)_ | Location |
-| ------------ | ----------- |
-| **CC_DCACHE**  | Centre de Calcul, (IN2P3), Lyon, FR    |
-| **CERN-EOSPILOT**  | European Organization for Nuclear Research, Meyrin, CH  |
-| **CNAF-STORM**  |  Istituto Nazionale di Fisica Nucleare, Bologna, IT |
-| **DESY-DCACHE**  | Deutsches Elektronen-Synchrotron, Hamburg, DE |
-| **IN2P3_LAPP-DCACHE**  | Laboratoire d'Annecy de Physique des Particules (CNRS/IN2P3), Annecy, FR |
-| **INFN_NAPOLI-DCACHE**  | Istituto Nazionale di Fisica Nucleare, Napoli, IT |
-| **PIC-DCACHE**  |  Port d’Informació Científica, Barcelona, ES |
-| **CESNET-S3**  |  Czech Education and Scientific NETwork, Prague, CZ  | 
+| _Rucio Storage Element (site-technology)_ | Location                                                                 |
+|-------------------------------------------|--------------------------------------------------------------------------|
+| **CC_DCACHE**                             | Centre de Calcul, (IN2P3), Lyon, FR                                      |
+| **CERN-EOSPILOT**                         | European Organization for Nuclear Research, Meyrin, CH                   |
+| **CNAF-STORM**                            | Istituto Nazionale di Fisica Nucleare, Bologna, IT                       |
+| **DESY-DCACHE**                           | Deutsches Elektronen-Synchrotron, Hamburg, DE                            |
+| **IN2P3_LAPP-DCACHE**                     | Laboratoire d'Annecy de Physique des Particules (CNRS/IN2P3), Annecy, FR |
+| **INFN_NAPOLI-DCACHE**                    | Istituto Nazionale di Fisica Nucleare, Napoli, IT                        |
+| **PIC-DCACHE**                            | Port d’Informació Científica, Barcelona, ES                              |
+| **CESNET-S3**                             | Czech Education and Scientific NETwork, Prague, CZ                       | 
 
 ![image](../static/img/rses.png)
 
@@ -44,12 +44,12 @@ export RUCIO_CONFIG=<PATH/TO/FILE/rucio.cfg>
 ```
 :::
 
-Once you have ready you `rucio.cfg` file, and the sofware environment with the Rucio client (see next section), you can identify towards Rucio by doing a 
+Once you have ready you `rucio.cfg` file, and the software environment with the Rucio client (see next section), you can identify towards Rucio by doing a 
 ```bash
 rucio whoami
 ```
 
-If the authentication was successful, you will see a message with you Rucio user crendentials. Now you should be able to interact with the Rucio instance.
+If the authentication was successful, you will see a message with you Rucio user credentials. Now you should be able to interact with the Rucio instance.
 
 #### OIDC token Rucio authentication 
 
@@ -137,7 +137,7 @@ pip install rucio-clients==<VERSION>
 python -m pip install rucio-clients==<VERSION>
 ```
 
-Please rely on the version indicated on the badge at the beggining of the section (without the `release-` prefix).
+Please rely on the version indicated on the badge at the beginning of the section (without the `release-` prefix).
 
 Despite the rucio client package should install most of the software dependencies on your system, you would need to install certain packages manually.
 
@@ -242,7 +242,7 @@ Take a look at some [Rucio CLI Quickstart commands](https://docs.google.com/docu
 
 ## Uploading data on the Data Lake
 
-In order to uplaod data on the Data Lake, and supposing that you want to organise your data into data sets, you will need to choose an RSE (Rucio Storage Element), a Scope name and a Dataset name. 
+In order to upload data on the Data Lake, and supposing that you want to organise your data into data sets, you will need to choose an RSE (Rucio Storage Element), a Scope name and a Dataset name. 
 
 The Scope name follows the formatting _Experiment_Institute_Project_ (e.g. ATLAS_LAPP_SP, the EOSC-Future Science Project)
 The Dataset name follows the formatting _ProjectType.DataDescription.DataType_ (DM.LeptonResonance.Data20015_10TeV, the ProjectType for EOSC-Future is either DM or EU). 

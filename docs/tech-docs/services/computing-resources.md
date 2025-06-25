@@ -5,7 +5,7 @@
 Reana is a software developed at CERN that focuses on the reproducibility and reanalysis of scientific results. It is deployed on the CERN VRE allowing users to run (and re-run) analysis pipelines on the VRE compute resources. 
 
 Reana supports various workflow systems (`CWL`, `Serial`, `Snakemake` and `Yadage`) and can be configured to offload the workflow to different compute backend (`HTCondor`, `Kubernetes` and `Slurm`). We refer the reader to the
-[official Reana documentation](https://docs.reana.io/) for futher details.
+[official Reana documentation](https://docs.reana.io/) for further details.
 
 :::warning[note]
 

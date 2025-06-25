@@ -5,7 +5,7 @@ It collects and stores its metrics as time series data, i.e. metrics information
 
 ## Monitoring configuration for the Rucio Jupyterlab extension
 
-In order to integrate the metrics with the extension the current directoruy structure has been modified in the following way (only added/ modified files are shown):
+In order to integrate the metrics with the extension the current directory structure has been modified in the following way (only added/ modified files are shown):
 ```
 rucio_jupyterlab/
 ├── __init__.py
@@ -63,7 +63,7 @@ Where `base_path = url_path_join(base_url, 'rucio-jupyterlab')`
 #### Why is this not necessary? 
 
 We want to aggregate all the metrics under **the same endpoint**, which is natively `web_app.settings["base_url"]/metrics`.
-In this case, creting an additional endpoint in `rucio-jupyterlab/metrics` is not needed!
+In this case, creating an additional endpoint in `rucio-jupyterlab/metrics` is not needed!
 
 :::tip[Use the native `/metrics` endpoint!]
 Don't bother adding the stuff above, and leverage the endpoint created by the Jupyter server!

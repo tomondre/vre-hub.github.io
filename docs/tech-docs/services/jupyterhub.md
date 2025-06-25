@@ -107,7 +107,7 @@ values:
 
 Finally, some extra environment variables can be set on the hub side to configure the Rucio extension:
 :::tip
-Check an example of how these variables are propagated from the hub to the user environmnet [here](https://github.com/vre-hub/environments/blob/d4d4892d9b2646dfe31ab176cdc23b50080f298a/vre-singleuser-py311/configure-vre.py#L27).
+Check an example of how these variables are propagated from the hub to the user environment [here](https://github.com/vre-hub/environments/blob/d4d4892d9b2646dfe31ab176cdc23b50080f298a/vre-singleuser-py311/configure-vre.py#L27).
 :::
 
 VRE `singleuser.extraEnv` example:

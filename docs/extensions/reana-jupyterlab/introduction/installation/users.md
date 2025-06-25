@@ -1,6 +1,6 @@
 # Installation guide for users
 
-## Intallation via pip
+## Installation via pip
 
 To install the extension, run the following command:
 ```bash

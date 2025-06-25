@@ -21,5 +21,5 @@ Please note that this Documentation is under construction and can quickly change
 If you want to contribute to the VRE project, please feel free to open an [issue](https://github.com/vre-hub/vre/issues), start a [discussion](https://github.com/orgs/vre-hub/discussions) or open a [Pull request](https://github.com/vre-hub/vre/pulls). 
 
 :::note
-If you are not a member of the [VRE](https://github.com/vre-hub) GitHub organisation, you will need to either fork the respository or request to be added as a member.
+If you are not a member of the [VRE](https://github.com/vre-hub) GitHub organisation, you will need to either fork the repository or request to be added as a member.
 :::

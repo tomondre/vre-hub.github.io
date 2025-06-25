@@ -24,7 +24,7 @@ The release manager is usually a VM where operators can upload, modify and delet
 ## Publishing content
 
 As described [here](https://cvmfs.readthedocs.io/en/stable/cpt-repo.html#content-publishing), there are four main steps needed to publish content: 
-1. Initiate the transation via `cvmfs_server transaction <repository name>`
+1. Initiate the translation via `cvmfs_server transaction <repository name>`
 2. Install content into `/cvmfs/<repository name>`
 3. (optional) Create nested catalogs at proper locations
 4. Finalise the transaction via `cvmfs_server publish <repository name>`

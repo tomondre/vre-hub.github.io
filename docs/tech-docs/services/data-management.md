@@ -3,7 +3,7 @@
 ![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fvre-hub%2Fvre%2Frefs%2Fheads%2Fmain%2Finfrastructure%2Fcluster%2Fflux%2Frucio%2Frucio-servers.yaml&query=%24.spec.values.image.tag&label=Rucio%20release&color=%23474986)
 ![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fvre-hub%2Fvre%2Frefs%2Fheads%2Fmain%2Finfrastructure%2Fcluster%2Fflux%2Frucio%2Frucio-servers.yaml&query=%24.spec.chart.spec.version&label=Rucio%20helm%20charts)
 
-Rucio is an Open Source scientific Data Management sofware developed at CERN and used since more than 10 by various experiments and collaborations.  
+Rucio is an Open Source scientific Data Management software developed at CERN and used since more than 10 by various experiments and collaborations.  
 
 Rucio is the backbone of the CERN VRE. The platform acts as a middleware to the ESCAPE Rucio instance, as well as for the rest of services. 
 
@@ -22,7 +22,7 @@ A detailed tutorial on how to deploy Rucio (the servers, the daemons and the UI 
 ### Developers software environment
 
 This section suggest a list of software packages that could be useful when dealing with rucio transfers between different data centers.
-For normal user interactio please go to the [VRE rucio users section](../../rucio.md#1-manual-installation)
+For normal user interaction please go to the [VRE rucio users section](../../rucio.md#1-manual-installation)
 
 ```bash
 dnf install wget curl \
@@ -38,7 +38,7 @@ dnf install wget curl \
 
 ### Interacting with the Rucio Data Base 
 
-Generally, Rucio database (DB) upgrades are straigforward and should work out of the box when following [Rucio official DB documentation](https://rucio.github.io/documentation/operator/database/) or Rucio Major release notes. For instance, minor DB changes or updates will be applied when modifying the version of a chart.
+Generally, Rucio database (DB) upgrades are straightforward and should work out of the box when following [Rucio official DB documentation](https://rucio.github.io/documentation/operator/database/) or Rucio Major release notes. For instance, minor DB changes or updates will be applied when modifying the version of a chart.
 
 #### Manual upgrade of the database schema
 
@@ -79,7 +79,7 @@ The `rucio/db/sqla/migrate_repo/versions` folder contains all the upstream alemb
 revision = '295289b5a800'
 down_revision = 'a6eb23955c28'
 ```
-When `grep`-ing for a specific reuvision, you will get two files as a result; the curret and the current plus DB revision.
+When `grep`-ing for a specific revision, you will get two files as a result; the current and the current plus DB revision.
 ```python
 > grep -ri 'a6eb23955c28'
 295289b5a800_processed_by_and__at_in_requests.py:down_revision = 'a6eb23955c28'

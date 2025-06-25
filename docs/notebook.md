@@ -9,10 +9,6 @@ Authenticate to IAM. Once you log into the service for the first time, everythin
 If you don't have an IAM account already, see the [authentication](docs/auth.md) section.
 Contact the responsible of the service if you are still having troubles running your notebook using a new account.
 
-<!-- ## DLaaS structure 
-
-![DLaaS architechture](img/dlaas_diagram.png) -->
-
 ## Server Options
 Select your server option based on your requirements by selecting the environment that suits you best. Each environment has been wrapped in a Docker image, some examples can be found [here](https://github.com/vre-hub/environments). If you want to stop the service and use a different one, go to 'File' in top left corner and select 'Hub control panel'; you can stop the server from there.
 
@@ -21,7 +17,7 @@ Once you are inside the service, you will find 5 panels in the left part menu.
 
 ##### 1. File Browser
 
-It enables you to work with the files and directories on your sistem. You can find more information in the [Jupyerlab documentation](https://jupyterlab.readthedocs.io/en/stable/user/files.html).
+It enables you to work with the files and directories on your system. You can find more information in the [Jupyerlab documentation](https://jupyterlab.readthedocs.io/en/stable/user/files.html).
 
 In case you want to **upload a file**, click on the 'Upload Files' button and choose the local files you want to upload into the notebook. The size is limited to 1 MB. This will upload your files during the session, but will NOT upload them on the Data Lake. 
 
@@ -40,7 +36,7 @@ Alternatively, you could specify the most general `--account=root` tag, but you 
 Otherwise, contact the VRE team on the **[Mattermost channel](https://mattermost.web.cern.ch/signup_user_complete/?id=zqaa9p5fqfd9bnnc64at4b5aye&md=link&sbr=su)** to ask for the creation of a new scope that fits your needs. 
 If you have multiple files that you would like to organise into a dataset, click on the 'Add files to a dataset' option, choose the correct scope name and a name for your data set. The data set name should identify what kind of data is inside, so please use this format: _ProjectType.DataDescription.DataType_ (DM.LeptonResonance.Data20015_10TeV, the ProjectType for EOSC-Future is either DM or EU). 
 
-**There are two directories which allow you to store files in the DLaaS, and you should be aware of their memeory limitations.**
+**There are two directories which allow you to store files in the DLaaS, and you should be aware of their memory limitations.**
 
 1. **/home/jovyan**: shared between all users, capacity of 800GB, it is never cleaned and should be only used to upload documents and certificates. 
 2. **/eos/eulake**: corresponds to the CERN-EOSPILOT RSE. This is the reason why when you 'make available' a file that you know is already in that RSE, the Jupyterlab will tell you it is immediately available (you do not have to *replicate* it from far-away storage, as it is already close to you!). **We therefore strongly recommend uploading on the `CERN-EOSPILOT` RSE the files that you know you will be using on the Jupyterhub.**
@@ -59,11 +55,11 @@ This makes it easy to see and navigate the structure of a document. A table of c
 * **EXPLORE**:
 Explore the Data Lake (files, datasets and containers). 
 If you want to use a specific data set, you will need to make it available and add it to your notebook. To do so, click on the folder button to see all the available scopes, select the one that stores your data and complete the search with the absolute DID. The DID syntax has some search flexibility:
-    - If you want to see all the files that are inside a specific scope your sintax will be ``` SCOPE:* ``` (Example: ```ATLAS_OD_EDU:*```).
-    - If you want to see all the files that starts with a specific term in a specific scope your sintaxis will be ```SCOPE:TERM*``` (Example: ```ATLAS_OD_EDU:data*```).
+    - If you want to see all the files that are inside a specific scope your syntax will be ``` SCOPE:* ``` (Example: ```ATLAS_OD_EDU:*```).
+    - If you want to see all the files that starts with a specific term in a specific scope your syntax will be ```SCOPE:TERM*``` (Example: ```ATLAS_OD_EDU:data*```).
     - If you want to see a specific file type the complete DID: ```SCOPE:NAME``` (Example: ```ATLAS_OD_EDU:data_B.GamGam.root```).
 
-    If you want to know if there is a replication attached to that file, you need to click on the Availability button and you will be redirected to the [Rucio WebUI](https://vre-rucio-ui.cern.ch/). This availability button has some difererent states: Available, Not Available, Collection is empty, Something went wrong... If the state is Not Available you will need to make it Available. Once done you can add it to your notebook.
+    If you want to know if there is a replication attached to that file, you need to click on the Availability button and you will be redirected to the [Rucio WebUI](https://vre-rucio-ui.cern.ch/). This availability button has some different states: Available, Not Available, Collection is empty, Something went wrong... If the state is Not Available you will need to make it Available. Once done you can add it to your notebook.
 
 * **NOTEBOOK**:
     Here you will be able to see all the files you added to the notebook and are ready to be used.
